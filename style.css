@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 200vh;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #232c33;
+  width: 100%;
+  height: 8rem;
+}
+
+header {
+  background-color: #5a7d7c;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+aside {
+  background-color: #b5b2c2;
+  width: 20%;
+  height: 100%;
+}
+
+article {
+  background-color: #a0c1d1;
+  width: 80%;
+  height: 100%;
+}
+
+footer {
+  background-color: #232c33;
+  width: 100%;
+  height: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
