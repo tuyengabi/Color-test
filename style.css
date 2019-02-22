@@ -10,6 +10,9 @@ body {
   width: 100vw;
   max-width: 100%;
   height: 200vh;
+  color: #dadff7;
+  font-size: 8rem;
+  overflow-x: hidden;
 }
 
 .top {
@@ -23,12 +26,29 @@ nav {
   background-color: #232c33;
   width: 100%;
   height: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1.5rem 0 0 0;
+}
+
+li {
+  display: inline;
+  font-size: 2.8rem;
+  padding: 0 3rem 0 3rem;
 }
 
 header {
   background-color: #5a7d7c;
   width: 100%;
   height: 100%;
+}
+header p {
+  text-align: justify;
+  padding: 30rem 50rem 0 5rem;
 }
 
 main {
@@ -41,6 +61,13 @@ aside {
   background-color: #b5b2c2;
   width: 20%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+aside p {
+  font-size: 2.5vw;
+  padding: 0 5rem;
 }
 
 article {
@@ -48,11 +75,26 @@ article {
   width: 80%;
   height: 100%;
 }
+article p {
+  text-align: justify;
+  padding: 15rem 35rem 0 5rem;
+}
 
 footer {
   background-color: #232c33;
   width: 100%;
-  height: 10%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul {
+  list-style-type: none;
+  padding: 1.5rem 0 0 0;
+}
+footer li {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem 3rem 0 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
