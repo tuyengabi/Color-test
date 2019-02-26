@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -6,13 +7,40 @@
   font-size: 62.5%;
 }
 
+:root {
+  --color-nav: #2b061e;
+  --color-footer: #2b061e;
+  --color-header: #493843;
+  --color-article: #6b717e;
+  --color-aside: #a9927d;
+  --color-text: #f1dabf;
+}
+
 body {
   width: 100vw;
   max-width: 100%;
   height: 200vh;
-  color: #f1dabf;
-  font-size: 8rem;
+  color: var(--color-text);
+  font-size: 12rem;
   overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.aside {
+  background-color: black;
+  width: 20%;
+  height: 120%;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
 }
 
 .top {
@@ -23,7 +51,7 @@ body {
 }
 
 nav {
-  background-color: #2b061e;
+  background-color: var(--color-nav);
   width: 100%;
   height: 8rem;
   display: flex;
@@ -42,7 +70,7 @@ li {
 }
 
 header {
-  background-color: #493843;
+  background-color: var(--color-header);
   width: 100%;
   height: 100%;
 }
@@ -58,7 +86,7 @@ main {
 }
 
 aside {
-  background-color: #a9927d;
+  background-color: var(--color-aside);
   width: 20%;
   height: 100%;
   display: flex;
@@ -66,12 +94,12 @@ aside {
   justify-content: center;
 }
 aside p {
-  font-size: 2.5vw;
-  padding: 0 5rem;
+  font-size: 1.8vw;
+  padding: 0 4rem;
 }
 
 article {
-  background-color: #6b717e;
+  background-color: var(--color-article);
   width: 80%;
   height: 100%;
 }
@@ -81,11 +109,12 @@ article p {
 }
 
 footer {
-  background-color: #2b061e;
+  background-color: var(--color-footer);
   width: 100%;
   height: 20%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 footer ul {
   list-style-type: none;
@@ -96,5 +125,3 @@ footer li {
   font-size: 2rem;
   padding: 2rem 3rem 0 3rem;
 }
-
-/*# sourceMappingURL=style.css.map */

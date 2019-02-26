@@ -1,13 +1,3 @@
-$nav: #2b061e;
-$footer: #2b061e;
-$header: #493843;
-$article: #6b717e;
-$aside: #a9927d;
-$text: #f1dabf;
-
-
-
-
 
 * {
   padding: 0;
@@ -17,13 +7,40 @@ $text: #f1dabf;
   font-size: 62.5%;
 }
 
+:root {
+  --color-nav: #181818;
+  --color-footer: #181818;
+  --color-header: #747474;
+  --color-article: #a3a3a3;
+  --color-aside: #464646;
+  --color-text: #ffffff;
+}
+
 body {
   width: 100vw;
   max-width: 100%;
   height: 200vh;
-  color: $text;
-  font-size: 8rem;
+  color: var(--color-text);
+  font-size: 12rem;
   overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.aside {
+  background-color: black;
+  width: 20%;
+  height: 120%;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
 }
 
 .top {
@@ -34,7 +51,7 @@ body {
 }
 
 nav {
-  background-color: $nav;
+  background-color: var(--color-nav);
   width: 100%;
   height: 8rem;
   display: flex;
@@ -53,15 +70,14 @@ li {
 }
 
 header {
-  background-color: $header;
+  background-color: var(--color-header);
   width: 100%;
   height: 100%;
-  p {
-    text-align: justify;
-    padding: 30rem 50rem 0 5rem;
-  }
 }
-
+header p {
+  text-align: justify;
+  padding: 30rem 50rem 0 5rem;
+}
 
 main {
   width: 100%;
@@ -70,42 +86,42 @@ main {
 }
 
 aside {
-  background-color: $aside;
+  background-color: var(--color-aside);
   width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  p {
-    font-size: 2.5vw;
-    padding: 0 5rem;
-  }
+}
+aside p {
+  font-size: 1.8vw;
+  padding: 0 4rem;
 }
 
 article {
-  background-color: $article;
+  background-color: var(--color-article);
   width: 80%;
   height: 100%;
-  p {
-    text-align: justify;
-    padding: 15rem 35rem 0 5rem;
-  }
+}
+article p {
+  text-align: justify;
+  padding: 15rem 35rem 0 5rem;
 }
 
 footer {
-  background-color: $footer;
+  background-color: var(--color-footer);
   width: 100%;
   height: 20%;
   display: flex;
   justify-content: space-around;
-ul {
+  align-items: center;
+}
+footer ul {
   list-style-type: none;
   padding: 1.5rem 0 0 0;
 }
-
-li {
+footer li {
   display: block;
   font-size: 2rem;
   padding: 2rem 3rem 0 3rem;
-}
 }
