@@ -10,8 +10,8 @@
 :root {
   --color-nav: #0d1f2d;
   --color-footer: #0d1f2d;
-  --color-header: #563635;
-  --color-article: #9cb380;
+  --color-header: #9cb380;
+  --color-article: #563635;
   --color-aside: #c7ac92;
   --color-text: #faffd8;
 }
