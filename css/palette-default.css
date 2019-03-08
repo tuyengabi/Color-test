@@ -14,6 +14,8 @@
   --color-article: #a3a3a3;
   --color-aside: #464646;
   --color-text: #ffffff;
+  --color-button: #3fa7d6;
+  --color-hover-button: #61b7dd;
 }
 
 body {
@@ -77,6 +79,22 @@ header {
 header p {
   text-align: justify;
   padding: 30rem 50rem 0 5rem;
+}
+
+button {
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+	padding:2rem 2rem 2rem 2rem;
+	background: var(--color-button);
+	color: var(--color-text);
+	width:25rem;
+  height: 8rem;
+	border-radius:2px;
+	border:none;
+}
+button:hover {
+  background-color: var(--color-hover-button);
 }
 
 main {
