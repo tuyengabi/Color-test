@@ -5,6 +5,7 @@
   border: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -14,8 +15,12 @@
   --color-article: #a3a3a3;
   --color-aside: #464646;
   --color-text: #ffffff;
-  --color-button: #3fa7d6;
-  --color-hover-button: #61b7dd;
+  --color-button1: #3fa7d6;
+  --color-hover-button1: #61b7dd;
+  --color-button2: #9cb380;
+  --color-hover-button2: #aec097;
+  --color-button3: #583e84;
+  --color-hover-button3: #76619a;
 }
 
 body {
@@ -32,6 +37,13 @@ body {
 img {
   max-width: 100%;
   padding: 2rem;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    font-size: 4rem;
+    padding: 5rem 20rem 0 5rem;
 }
 
 .aside {
@@ -81,20 +93,50 @@ header p {
   padding: 30rem 50rem 0 5rem;
 }
 
-button {
+.button1 {
   position: relative;
   top: 5rem;
   left: 7rem;
 	padding:2rem 2rem 2rem 2rem;
-	background: var(--color-button);
+	background: var(--color-button1);
 	color: var(--color-text);
 	width:25rem;
   height: 8rem;
 	border-radius:2px;
 	border:none;
 }
-button:hover {
-  background-color: var(--color-hover-button);
+.button1:hover {
+  background-color: var(--color-hover-button1);
+}
+.button2 {
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+	padding:2rem 2rem 2rem 2rem;
+	background: var(--color-button2);
+	color: var(--color-text);
+	width:25rem;
+  height: 8rem;
+	border-radius:2px;
+	border:none;
+}
+.button2:hover {
+  background-color: var(--color-hover-button2);
+}
+.button3 {
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+	padding:2rem 2rem 2rem 2rem;
+	background: var(--color-button3);
+	color: var(--color-text);
+	width:25rem;
+  height: 8rem;
+	border-radius:2px;
+	border:none;
+}
+.button3:hover {
+  background-color: var(--color-hover-button3);
 }
 
 main {
@@ -117,7 +159,8 @@ aside p {
 }
 
 article {
-  background-color: var(--color-article);
+  background-color: #f9f9f9;
+  color: var(--color-nav);
   width: 80%;
   height: 100%;
 }
